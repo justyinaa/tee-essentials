@@ -1,0 +1,249 @@
+$herobg: url('/src/assets/heroimage.png');
+
+.cartFlex{
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    padding: 8px;
+    justify-content: space-evenly;
+    //border: 1px solid red;
+}
+#cartImage{
+    width: 100%;
+    height: 100%;
+}
+.cartImageDiv{
+    width: 7vw;
+    height: 7vh;
+    background-color: #FBEBB5;
+}
+.cartBtn {
+    background-color: #f1f1f1;
+    padding: 5px;
+    width: 30px;
+}
+
+
+
+
+.quantityControl{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    color: #000;
+    
+}
+.cartHeader {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    font-size: 2rem;
+    background-color: #FFF9E5;
+    margin-bottom: 50px;
+    padding: 1.6rem;
+    
+       
+}
+.cartHeaderText{
+
+width: 10%;
+}
+// .divPercentage{
+//     // width: 10%;
+// border: 1px solid black;
+// }
+.productFlex {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.cartTotals{
+    display: flex;
+    gap: 7rem;
+}
+.productsDisplay {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    font-size: 2rem;
+    margin-bottom: 50px;
+    padding: 1.6rem;
+    width: 100%;
+    align-items: center;
+}
+.cartItemsContainer{
+    width: 100%;
+}
+.cartPercentage{
+    width: 50%;
+    font-size: 1.8rem;
+}
+
+.cartTotalsDiv {
+    /* margin-top: 50px; */
+    background-color: #FBEBB5;
+    padding: 30px;
+    margin: 2rem;
+}
+.cartTotalsText{
+    font-size: 3.2rem;
+    font-weight: 600;
+}
+.cartHeaderText:hover{
+    text-decoration: underline;
+}
+.totalCartAmt{
+    color: #B88E2F;;
+}
+.checkoutBtn{
+    width: 30rem;
+    height: 5.6rem;
+    margin-top: 2.4rem;
+    gap: 0px;
+    border-radius: 15px;
+    border: 1px solid black;
+    background-color: #FFF9E5;
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: #000;
+}
+.checkoutBtn:hover{
+    border: 1px solid black;
+    color: #000;
+}
+
+.cartProductTitle, .cartProductPrice, .cartProductQuantity, .cartProductTotal {
+    font-size: 2rem;
+}
+.cartProductTotal{
+    font-weight: 600;
+}
+.deleteIcon{
+    width: 3rem;
+    height: 3rem;
+}
+
+
+@media (max-width: 1200px) {}
+
+@media (max-width: 1024px) {
+    .cartImageDiv {
+            width: 9vw;
+            height: 3vh;
+            background-color: #FBEBB5;
+        }
+}
+@media (max-width: 768px) {
+    
+    
+}
+
+@media (max-width: 480px) {
+.cartFlex {
+        display: block;
+        
+    }
+    .hero {
+        text-align: center;
+        margin-top: 50px;
+        padding-top: 80px;
+        padding-bottom: 80px;
+        width: 100%;
+    }
+    
+    .herobg {
+        background-image: $herobg;
+        width: 100%;
+        height: 100%;
+        background-repeat: inherit;
+    
+    }
+
+.cartProductTitle,
+.cartProductPrice,
+.cartProductQuantity,
+.cartProductTotal,
+.quantityControl {
+    font-size: 5rem;
+}
+.cartHeader {
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr; 
+    font-size: 5rem;
+    background-color: #FFF9E5;
+    margin-bottom: 5rem;
+    padding: 1rem 2rem;
+}
+
+.cartHeaderText {
+
+    width: 10%;
+}
+.cartTotalsDiv {
+    /* margin-top: 50px; */
+    background-color: #FFF9E5;
+    padding: 30px;
+    margin: 50px;
+}
+
+.cartTotalsText {
+    font-size: 10rem;
+    font-weight: 600;
+}
+
+.cartHeaderText:hover {
+    text-decoration: underline;
+}
+.cartPercentage {
+    font-size: 6rem;
+}
+.checkoutBtn {
+    width: 270px;
+    height: 46.95px;
+    top: 700px;
+    left: 1033px;
+    gap: 0px;
+    border-radius: 15px;
+    // border: 1px solid black;
+    background-color: #FFF9E5;
+    font-size: 5rem;
+    font-weight: 400;
+}
+
+// .checkoutBtn:hover {
+//     // border: 1px solid black;
+// }
+#cartImage {
+    width: 12rem;
+    height: 8rem;
+}
+.cartImageDiv {
+    width: 9vw;
+    height: 3vh;
+    background-color: #FBEBB5;
+}
+.productFlex {
+    display: block;
+  
+}
+.cartTotalsDiv {
+    background-color: #FFF9E5;
+    padding: 18rem;
+    margin: 5rem;
+}
+.productsDisplay {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    align-items: center;
+}
+.deleteIcon {
+    width: 7rem;
+    height: 7rem;
+}
+.quantityControl{
+    gap: 1.5rem;
+    color: #000;
+}
+.checkoutBtn{
+    color: #000;
+}
+}

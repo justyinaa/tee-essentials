@@ -1,0 +1,128 @@
+.footerLinks {
+    display: flex;
+    gap: 14rem;
+    padding: 6rem;
+    color: #9F9F9F;
+    line-height: 3rem;
+    font-size: 2rem;
+
+}
+
+.footerLinksBlock {
+    display: flex;
+    flex-direction: column;
+    color: #9F9F9F;
+    line-height: 8rem;
+   
+
+}
+.linksFlex{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    line-height: 5rem;
+}
+// .footerLinkCol{
+//     margin-bottom: $m-bottom;
+// }
+.footerParagraph {
+    padding: 4rem;
+    font-size: 2rem;
+
+}
+
+
+#emailLink {
+    border: none;
+    border-bottom: solid 2px black;
+    margin-right: 1.5rem;
+    
+
+}
+
+#emailLink:focus {
+    outline: none;
+}
+
+#emailBtn {
+    border-bottom: solid 2px black;
+}
+
+.footerParagraph{
+    border-top: 1px solid #D9D9D9;
+}
+
+
+// @media (max-width: 1200px) {
+//     .footerLinks {
+//         display: flex;
+//         justify-content: space-evenly;
+//         gap: 14rem;
+//         padding: 4rem;
+//         color: #9F9F9F;
+//         line-height: 3rem;
+
+//     }
+
+//     .footerLinksBlock {
+//         display: flex;
+//         flex-direction: column;
+//         color: #9F9F9F;
+//         margin-top: 5rem;
+
+
+//     }
+// }
+@media (max-width: 1024px) {}
+@media (max-width: 650px) {
+    .footerLinks {
+            font-size: 5rem;
+            display: block;
+        }
+    
+        .linksFlex {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            line-height: 13rem;
+        }
+    
+        .footerParagraph {
+            font-size: 5rem;
+            margin-top: 15rem;
+            border-top: 1px solid #D9D9D9;
+        }
+    
+        .emailLinkFlex {
+            display: flex;
+            gap: 6rem;
+        }
+}
+@media (max-width: 485px) {
+.footerLinks {
+        font-size: 5rem;
+        display: block;
+    }
+    .linksFlex{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        line-height: 13rem;
+    }
+    .footerParagraph{
+        font-size: 5rem;
+        margin-top: 15rem;
+        border-top: 1px solid #D9D9D9;
+    }
+
+.emailLinkFlex {
+    display: flex;
+    gap: 6rem;
+}
+#emailLink {
+    border: none;
+    border-bottom: solid 2px black;
+    margin-right: 1.5rem;
+    width: 60rem;
+
+}
+}
+
+

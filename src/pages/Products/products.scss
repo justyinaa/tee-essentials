@@ -1,0 +1,547 @@
+$d-flex: flex;
+$padding-body: 0;
+$p-body: 30px;
+$p-20: 8px;
+$p-40: 40px;
+$w-20: 50px;
+$navposition: fixed;
+$top: 0;
+$space-between: space-between;
+$justify-center: center;
+$justify-flex-end: flex-end;
+$text-center: center;
+$align-center: center;
+$object-fit: cover;
+$background-repeat: inherit;
+$width: 100%;
+$width2: 100vw;
+$width3: 40%;
+$width4: 0%;
+$width5: 25%;
+$width6: 20px;
+$width7: 100px;
+$height2: 65vh;
+$height: 30vh;
+$m-left: 100px;
+$m-right: 100px;
+$m-top: 50px;
+$m-top2: 50px;
+$m-bottom: 50px;
+$p-top: 80px;
+$p-bottom: 80px;
+$text-center: center;
+$herobg: url('/src/assets/heroimage.png');
+$f-direction: column;
+$f-wrap: wrap;
+$f-1: 1;
+$gap1: 60px;
+$gap2: 20px;
+$gap3: 100px;
+$b-radius: 50%;
+$b-radius2: 15px;
+$b-white: white;
+$b-black: 1px solid #000;
+$b-ash: 1px solid #9F9F9F;
+$b-ash2: #9F9F9F;
+$black: #000;
+$f-35: 35px;
+$f-20: 25px;
+$b-right: 2px solid #9F9F9F;
+$f-column: column;
+$f-row: row;
+$f-wrap: flex wrap;
+$text-underline: underline;
+
+
+
+.homeLink {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding: 4rem;
+
+}
+
+.homeLink a {
+    color: $b-ash2;
+}
+
+.homeLink a:hover {
+    color: $b-ash2;
+}
+.loading{
+    font-size: 2rem;
+}
+.sofaDescription {
+    display: $d-flex;
+    gap: 50px;
+    padding: $p-40;
+    justify-content: $justify-center;
+}
+
+.sofaCollection {
+    display: $d-flex;
+    flex-direction: $f-direction;
+    cursor: pointer;
+}
+.sofaCollections{
+    cursor: pointer;
+}
+.starIcons {
+    display: $d-flex;
+    gap: 1.5rem;
+    font-size: 2rem;
+    align-items: center;
+}
+.star{
+    width: 2.5rem;
+    height: 2.5rem;        
+}
+
+.custReview {
+    display: $d-flex;
+    flex: $f-1;
+}
+
+.sizes {
+    display: $d-flex;
+    gap: $gap2;
+}
+
+.sizesBtn {
+    width: $width6;
+    justify-content: $justify-center;
+    display: $d-flex;
+}
+
+.colorsBtn1,
+.colorsBtn2,
+.colorsBtn3 {
+    border-radius: 100%;
+    transform: scaleY(1.9);
+}
+
+.colorsBtn {
+    display: $d-flex;
+    gap: $gap2;
+    margin-bottom: $m-bottom;
+}
+.selectedColorText{
+    font-size: 2rem;
+    font-weight: 800;
+}
+.addItems {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    /* margin-bottom: -1px; */
+}
+
+.addCartItems {
+    display: $d-flex;
+    align-items: $align-center;
+    gap: $gap2;
+    margin-bottom: 30px;
+}
+
+.addItemsCount {
+    display: $d-flex;
+    gap: $gap2;
+    background-color: $b-white;
+    border: $b-black;
+    color: #000;
+}
+
+.addItemsCount:hover {
+    background-color: $b-white;
+    border: $b-ash;
+}
+
+.addToCartBtn {
+    background-color: $b-white;
+    border: $b-black;
+    color: #000;
+}
+
+.addToCartBtn:hover {
+    background-color: $b-white;
+    border: $b-ash;
+}
+
+.outdoorSofa {
+    border-radius: $b-radius2;
+    width: 10rem;
+    height: 10rem;
+    display: $d-flex;
+    flex-direction: $f-column;
+    margin-bottom: 20px;
+}
+
+#asgardSofa {
+    border-radius: $b-radius2;
+}
+
+.asgaardHeader {
+    font-size: $f-35;
+}
+
+.chevronBorder,
+#halfstar {
+    border-right: $b-right;
+}
+
+.sofaPrice {
+    color: $b-ash2;
+}
+
+.socialIcons {
+    display: $d-flex;
+    gap: $gap2;
+
+}
+.socials{
+    width: 3rem;
+    height: 3rem;
+}
+
+.description {
+    padding: $p-40;
+}
+
+.asgardsofa2 {
+    display: $d-flex;
+    gap: $gap2;
+    margin-bottom: $m-bottom;
+}
+
+#relProductsHeader {
+    font-size: $f-20;
+    text-align: $text-center;
+}
+
+#viewMore {
+    color: $black;
+    display: $d-flex;
+    justify-content: $justify-center;
+
+}
+
+#viewMore:hover {
+    text-decoration: underline;
+}
+.singleImage{
+    width: 600px;
+}
+// .carousel{
+//     display: flex;
+// }
+
+.homeLink a{
+    font-size: 2rem;
+    display: flex;
+    text-align: center;
+}
+.chevronRight {
+    font-size: 2.4rem;
+    color: black;
+}
+ .custReview, .productDescription, .productSize, .sizes, .addCartItems, .productSKU, .productCategory, .socialIcons, .productColor{
+    font-size: 2rem;
+}
+.productTitleHeader{
+    font-size: 4rem;
+    font-weight: 600;
+}
+.productPrice{
+    font-size: 2.4rem;
+    font-weight: 500;
+    color:#9F9F9F;;
+}
+ .productPageTitle {
+     font-size: 3rem;
+   
+ }
+ .carousel .thumbs-wrapper {
+     display: none;
+ }
+ .control-dots{
+    display: none;
+ }
+ .slide {
+    &:nth-child(1){
+        margin-left: -6rem;
+    }
+    &:nth-child(2){
+        margin-left: -2rem;
+    }
+    &:nth-child(3){
+        margin-left: -11rem;
+    }
+ }
+ 
+
+
+
+@media (max-width: 1023px) {
+    .colorsBtn1,
+        .colorsBtn2,
+        .colorsBtn3 {
+            border-radius: 100%;
+            transform: scaleY(1.9);
+        }
+        div.menuIcon{
+            display: none;
+        }
+}
+
+
+
+@media (max-width: 720px) {
+ 
+    .singleImage {
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+    
+    
+        .sofaDescription {
+            display: block;
+        }
+    
+        .sofaCollections {
+            display: none;
+        }
+    
+        .carousel .control-dots .dot {
+            -webkit-transition: opacity .25s ease-in;
+            -moz-transition: opacity .25s ease-in;
+            -ms-transition: opacity .25s ease-in;
+            -o-transition: opacity .25s ease-in;
+            transition: opacity .25s ease-in;
+            opacity: .3;
+            filter: alpha(opacity=30);
+            box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.9);
+            background: #121212;
+            width: 8px;
+            height: 8px;
+            cursor: pointer;
+            display: inline-block;
+            margin: 0 8px;
+            color: black;
+            border-radius: 50%;
+    
+        }
+    
+        .control-dots {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1.25rem;
+        }
+    
+        .carousel-status {
+            display: block;
+        }
+    
+        .carousel {
+            display: block;
+        }
+    
+        .productDetails {
+            font-size: 25px;
+        }
+    
+        .star {
+            width: 2rem;
+            height: 2rem;
+        }
+         div.menuIcon {
+            display: block;
+        }
+        button.colorsBtn1,
+        button.colorsBtn2,
+        button.colorsBtn3{
+            padding: 10px;
+        }
+        .colorsBtn1,
+        .colorsBtn2,
+        .colorsBtn3 {
+            border-radius: 100%;
+            transform: scaleY(1.2);
+        }
+        .selectedColorText {
+            font-size: 4rem;
+            font-weight: 800;
+        }
+                 
+        
+    }
+@media (max-width: 600px) {
+.singleImage {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+    
+
+.sofaDescription {
+    display: block;
+}
+
+.sofaCollections {
+    display: none;
+}
+.carousel .control-dots .dot {
+    -webkit-transition: opacity .25s ease-in;
+    -moz-transition: opacity .25s ease-in;
+    -ms-transition: opacity .25s ease-in;
+    -o-transition: opacity .25s ease-in;
+    transition: opacity .25s ease-in;
+    opacity: .3;
+    filter: alpha(opacity=30);
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.9);
+    background: #121212;
+        width: 8px;
+    height: 8px;
+    cursor: pointer;
+    display: inline-block;
+    margin: 0 8px;
+    color: black; border-radius: 50%;
+    
+}
+.control-dots{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.25rem;
+}
+.carousel-status{
+     display: block;
+}
+.carousel {
+    display: block;
+}
+.productDetails{
+    font-size: 25px;
+}
+.star {
+    width: 2rem;
+    height: 2rem;
+}
+.socials {
+    width: 7rem;
+    height: 7rem;
+}
+}
+
+@media (max-width: 485px) {
+.singleImage {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+
+.sofaDescription {
+    display: block;
+}
+
+.sofaCollections {
+    display: none;
+}
+.carousel .control-dots .dot {
+        -webkit-transition: opacity .25s ease-in;
+        -moz-transition: opacity .25s ease-in;
+        -ms-transition: opacity .25s ease-in;
+        -o-transition: opacity .25s ease-in;
+        transition: opacity .25s ease-in;
+        opacity: .3;
+        filter: alpha(opacity=30);
+        box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.9);
+        background: #121212;
+            width: 8px;
+        height: 8px;
+        cursor: pointer;
+        display: inline-block;
+        margin: 0 8px;
+        color: black; border-radius: 50%;
+        
+    }
+            .carousel .control-dots {
+                position: absolute;
+                bottom: -8px;
+                margin: 10px 0;
+                padding: 0;
+                text-align: center;
+                width: 100%;
+                z-index: 1;
+                display: flex;
+            }
+
+    .carousel-status{
+        display: block;
+    }
+.carousel {
+    display: block;
+}
+ .carousel .thumbs-wrapper {
+     margin: 20px;
+     overflow: hidden;
+     display: none;
+ }
+ ul.slider.animated{
+        transform: translate3d(-210%, 0px, 0px);
+        transition-duration: 350ms;
+        
+ }
+
+  .custReview,
+  .productDescription,
+  .productSize,
+  .sizes,
+  .addCartItems,
+  .productSKU,
+  .productCategory,
+  .socialIcons,
+  .productColor {
+      font-size: 5rem;
+  }
+
+  .productTitleHeader {
+      font-size: 6rem;
+      font-weight: 600;
+  }
+
+  .productPrice {
+      font-size: 5rem;
+      font-weight: 500;
+      color: #9F9F9F;
+      
+  }
+  .productPageTitle{
+    font-size: 5rem;
+  }
+        .homeLink a{
+            font-size: 5rem;
+        }
+.chevronRight {
+    font-size: 6.7rem;
+}
+.colorsBtn {
+    font-size: 4rem;
+}
+.star {
+    width: 8rem;
+    height: 7rem;
+}
+.addItemsCount, .addToCartBtn{
+    color: #000;
+}
+}
+
+
+
+
+
+

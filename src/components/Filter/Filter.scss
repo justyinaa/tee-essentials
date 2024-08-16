@@ -1,0 +1,85 @@
+.filter{
+    display: flex;
+    justify-content: space-between;
+    background-color: #FAF4F4;
+    color: #000;
+    padding: 2rem 5rem;
+}
+.filterDiv1{
+    width: fit-content;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+.filterImgs{
+    width: 20px;
+    height: 20px;
+}
+.filterDiv2{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+p{
+    font-size: 14px;
+}
+.sortParagraph{
+    border-left: 2px solid #9F9F9F;
+
+}
+.sortParagraphSpacing{
+    margin-left: 20px;
+}
+.sortCount{
+    background-color: #fff;
+    color: #000;
+}
+.select{
+    background-color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    color: #000;
+}
+.selectButton{
+    background-color: white;
+    font-size: 14px;
+}
+
+@media (max-width: 1024px) {}
+
+@media (max-width: 650px) {
+    .sortParagraphSpacing {
+            display: none;
+        }
+    .filterImgs {
+            width: 15px;
+            height: 15px;
+        }
+    .sortBy{
+        display: none;
+    }
+    .select{
+        background-color: white;
+        border: none;
+        padding: 10px;
+        border-radius: 10px;
+        color: #000;
+    }
+
+}
+@media (max-width: 485px) {
+    .sortParagraphSpacing{
+        display: none;
+    }
+        .select {
+            background-color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 10px;
+            color: #000;
+        }
+        .sortCount{
+            color: #000;
+        }
+}

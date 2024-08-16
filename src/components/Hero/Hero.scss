@@ -1,0 +1,56 @@
+$herobg: url('/src/assets/heroimage.png');
+
+
+.hero {
+    text-align: center;
+    margin-top: 10rem;
+    padding: 8rem 0;
+}
+
+.herobg {
+    background-image: $herobg;
+    // width: 100vw;
+    // height: 65vh;
+    background-repeat: inherit;
+}
+
+.heroHeader {
+    font-size: 5.8rem;
+    font-weight: 500;
+}
+.meubel{
+    width: fit-content;
+}
+.heroTexts {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    font-size: 2.6rem;
+    align-items: center;
+}
+
+
+@media (max-width: 1023px) {
+
+}
+@media (max-width: 650px) {
+.heroHeader {
+        font-size: 15.8rem;
+        font-weight: 600;
+    }
+
+    .heroTexts {
+       
+        font-size: 6.6rem;
+    }
+}
+@media (max-width: 485px) {
+.heroHeader {
+        font-size: 23.8rem;
+        font-weight: 600;
+    }
+
+    .heroTexts {
+        font-size: 10.6rem;
+    }
+}

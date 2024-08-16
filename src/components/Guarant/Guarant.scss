@@ -1,0 +1,162 @@
+.guarantee {
+    display: flex;
+    gap: 4.4rem;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    background-color: #FAF4F4;
+    padding: 1rem;
+
+}
+
+.guarant {
+    margin: 5rem;
+}
+.guarantHeader{
+    font-size: 3rem;
+    font-weight: 500;
+}
+.guarantParagraph{
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+//responsiveness
+// @media (max-width: 1200px) {
+//         .guarantee {
+//                 display: flex;
+        
+        
+//             }
+        
+//             .guarant {
+//                 margin-top: 20px;
+        
+//             }
+        
+//             .guarantHeader {
+//                 font-size: 7rem;
+//                 font-weight: 500;
+//             }
+        
+//             .guarantParagraph {
+//                 font-size: 5rem;
+//                 font-weight: 400;
+//             }
+// }
+@media (max-width: 1023px) {
+.guarantee {
+        display: flex;
+        gap: 6rem;
+        justify-content: center;
+        align-items: center;
+        height: 30vh;
+        background-color: #FAF4F4;
+        padding-top: 15px;
+        padding-bottom: 15px;
+
+    }
+   
+    
+        .guarant {
+            margin-top: 2rem;
+    
+        }
+    
+        .guarantHeader {
+            font-size: 3rem;
+            font-weight: 500;
+        }
+    
+        .guarantParagraph {
+            font-size: 2rem;
+            font-weight: 400;
+        }
+}
+@media (max-width: 650px) {
+    
+.guarantee {
+        display: block;
+        gap: 6rem;
+        height: 80vh;
+        background-color: #FAF4F4;
+        padding-top: 15px;
+        padding-bottom: 15px;
+
+
+    }
+
+    .guarant {
+        margin-top: 2rem;
+
+    }
+
+    .guarantHeader {
+        font-size: 7rem;
+        font-weight: 500;
+    }
+
+    .guarantParagraph {
+        font-size: 5rem;
+        font-weight: 400;
+    }
+}
+
+
+@media (max-width: 485px) {
+    .guarantee {
+            display: block;
+                gap: 6rem;
+                height: fit-content;
+                background-color: #FAF4F4;
+                padding-top: 15px;
+                padding-bottom: 15px;
+           
+    
+        }
+    
+        .guarant {
+            margin-top: 2rem;
+    
+        }
+        .guarantHeader {
+            font-size: 10rem;
+            font-weight: 500;
+        }
+    
+        .guarantParagraph {
+            font-size: 7rem;
+            font-weight: 400;
+        }
+    
+    
+    }
+
+
+@media (max-width: 375px) {
+.guarantee {
+        display: block;
+        gap: 6rem;
+        height: fit-content;
+        background-color: #FAF4F4;
+        padding-top: 15px;
+        padding-bottom: 15px;
+
+
+    }
+
+    .guarant {
+        margin-top: 2rem;
+
+    }
+
+    .guarantHeader {
+        font-size: 10rem;
+        font-weight: 500;
+    }
+
+    .guarantParagraph {
+        font-size: 7rem;
+        font-weight: 400;
+    }
+}

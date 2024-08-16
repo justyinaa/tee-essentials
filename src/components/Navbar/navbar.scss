@@ -1,0 +1,318 @@
+nav {
+    position: fixed;
+    top: 0;
+    background: white;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    //gap: 5rem;
+    padding: 3.6rem 10rem;
+    
+}
+
+.navFlex {
+    display: flex;
+    gap: 15.6rem;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 7.5rem;
+}
+
+nav ul li {
+    list-style: none;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    font-weight: 500;
+    color: #000;
+    font-family: Poppins;
+}
+
+.navIcons {
+    width: 15px;
+}
+.navbar-container{
+    z-index: 5;
+}
+.icon{
+    width: 2.4rem;
+    height: 2.4rem;
+    cursor: pointer;
+}
+.navlinks {
+    display: flex;
+    justify-content: flex-end;
+    gap: 60px;
+}
+
+.icons {
+    width: 100%;
+    display: flex;
+    gap: 5rem;
+    align-items: center;
+}
+
+#searchInput {
+    border: none;
+    border-bottom: solid 3px black;;
+}
+
+#searchInput:focus {
+    outline: none;
+}
+
+.searchResults {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.navlinks li a,
+.icons li a{
+    color: #000;
+}
+#searchInput {
+    border: none;
+    border-bottom: solid 3px black;;
+    font-size: 2rem;
+}
+.noResults{
+    font-size: 20px;
+    font-style: italic;
+    text-align: center;
+}
+// Responsive styles
+
+@media (max-width: 1200px) {
+    nav {
+        display: flex;
+        justify-content: center;
+        gap: 5rem;
+    }
+
+    .navDisplay {
+        display: block;
+    }
+}
+
+@media (max-width: 1023px) {
+    nav {
+        display: flex;
+        justify-content: center;
+        gap: 5rem;
+    }
+
+    .navDisplay {
+        display: block;
+    }
+        .navFlex {
+            display: flex;
+            //gap: 28.6rem;
+        }
+
+    // .icons {
+    //     margin-left: -50px;
+
+    // }
+}
+
+
+
+@media (max-width: 650px) {
+
+    nav {
+        display: block;
+        gap: 5rem;
+    }
+
+    .navlinks {
+        display: none;
+    }
+
+    .icons {
+        display: flex;
+        font-size: 1.1rem;
+        gap: 10.4rem;
+    }
+
+    .logo4 {
+        cursor: pointer;
+    }
+
+    .navbar-container {
+        display: block;
+        width: 100%;
+    }
+
+    ul {
+        display: block;
+    }
+
+    nav ul li {
+        margin-bottom: 20px;
+    }
+
+    .navFlex {
+            display: flex;
+               // gap: 88rem;
+                height: fit-content;
+    }
+
+    .menu-open .navlinks {
+        display: block;
+        margin-left: -533px;
+        margin-top: 50px;
+
+
+    }
+
+    .menu-open .icons {
+        display: none;
+    }
+
+    .menuIcon {
+        
+     font-size: 5.3rem;
+            
+    }
+    .iconImgs{
+        width: 6rem;
+        height: 6rem;
+    }
+}
+
+@media (max-width: 600px) {
+nav {
+        display: block;
+        //gap: $nav-gap;
+    }
+
+    .navlinks {
+        display: none;
+    }
+
+    .icons {
+        display: flex;
+        font-size: 1.1rem;
+        gap: 17.4rem;
+    }
+
+    .navbar-container {
+        display: block;
+        width: 100%;
+    }
+
+    ul {
+        display: block;
+    }
+
+    nav ul li {
+        list-style: none;
+        font-size: 5.6rem;
+        line-height: 15.4rem;
+        font-weight: 500;
+        color: #000;
+        font-family: Poppins;
+    }
+
+    .navFlex {
+        display: flex;
+        //gap: 168.4rem;
+        height: fit-content;
+    }
+
+    .menu-open .navlinks {
+        display: block;
+        margin-left: -125px;
+        margin-top: 50px;
+
+
+    }
+
+    .menuIcon {
+
+        font-size: 10.3rem;
+    }
+
+    .menu-open .icons {
+        display: none;
+    }
+        #searchInput {
+            border: none;
+            border-bottom: solid 3px black;
+            font-size: 3rem;
+            margin-top: 6rem;
+            /* font-size: 0px; */
+        }
+}
+
+
+@media (max-width: 485px) {
+    nav {
+        display: block;
+        //gap: $nav-gap;
+    }
+
+    .navlinks {
+        display: none;
+    }
+
+    .icons {
+        display: flex;
+        font-size: 1.1rem;
+        justify-content: end;
+        //gap: 17.4rem;
+    }
+
+    .navbar-container {
+        display: block;
+        width: 100%;
+    }
+
+    ul {
+        display: block;
+    }
+
+   nav ul li {
+       list-style: none;
+       font-size: 5.6rem;
+       line-height: 15.4rem;
+       font-weight: 500;
+       color: #000;
+       font-family: Poppins;
+       
+   }
+    .navFlex {
+        display: flex;
+        //gap: 164.4rem;
+        height: fit-content;
+    }
+
+ .menu-open .navlinks {
+     display: block;
+     margin-top: 50px;
+     margin-left: -107px;
+ }
+.menuIcon {
+
+    font-size: 10.3rem;
+}
+    .menu-open .icons {
+        display: none;
+    }
+
+    .iconImgs{
+        width: 7rem;
+        height: 7rem;
+    }
+    .beat{
+        width: 2px;
+        height: 2px;
+    }
+
+}
+
+
+
+
