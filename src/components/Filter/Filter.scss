@@ -34,7 +34,7 @@ p{
     background-color: #fff;
     color: #000;
 }
-.select{
+#category{
     background-color: white;
     border: none;
     padding: 10px;
@@ -59,7 +59,7 @@ p{
     .sortBy{
         display: none;
     }
-    .select{
+    #category{
         background-color: white;
         border: none;
         padding: 10px;
@@ -72,10 +72,10 @@ p{
     .sortParagraphSpacing{
         display: none;
     }
-        .select {
+        #category {
             background-color: white;
             border: none;
-            padding: 15px;
+            padding: 10px;
             border-radius: 10px;
             color: #000;
         }
