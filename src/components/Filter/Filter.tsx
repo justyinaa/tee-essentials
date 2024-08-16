@@ -11,7 +11,7 @@ interface FilterProps {
   setProductsPerPage: (count: number) => void;
   totalProducts: number;
   productsPerPage: number;
-  filteredProductsCount: number; // New prop to get the count of filtered products
+  filteredProductsCount: number; 
 }
 
 const Filter: React.FC<FilterProps> = ({
@@ -96,23 +96,23 @@ const Filter: React.FC<FilterProps> = ({
             </select>
           </span>
         </p>
-        <p>
-          Filter by{" "}
-          <span>
-            <select
-              name="category"
-              id="category"
-              className="select"
-              onChange={(e) => setCategoryFilter(e.target.value)}
-            >
-              <option value="">All Categories</option>
-              <option value="beauty">Beauty</option>
-              <option value="furniture">Furniture</option>
-              <option value="groceries">Groceries</option>
-              <option value="fragrances">Fragrances</option>
-            </select>
-          </span>
-        </p>
+        <p className="filterBy">Filter by </p>
+        <span>
+          <select
+            name="category"
+            id="category"
+            className="select"
+            onChange={(e) => setCategoryFilter(e.target.value)}
+          >
+            <option value="" className="default">
+              Default
+            </option>
+            <option value="beauty">Beauty</option>
+            <option value="furniture">Furniture</option>
+            <option value="groceries">Groceries</option>
+            <option value="fragrances">Fragrances</option>
+          </select>
+        </span>
       </div>
     </div>
   );
