@@ -66,6 +66,12 @@ p{
         border-radius: 10px;
         color: #000;
     }
+    .filterBy{
+        display: none;
+    }
+    .filterDiv1{
+        gap: 5rem;
+    }
 
 }
 @media (max-width: 485px) {
@@ -73,13 +79,14 @@ p{
         display: none;
     }
         .select {
-            background-color: white;
+            background-color: #FAF4F4;
             border: none;
-            padding: 20px 10px;
+            padding: 10px;
             border-radius: 10px;
             color: #000;
         }
         .sortCount{
             color: #000;
         }
+       
 }
