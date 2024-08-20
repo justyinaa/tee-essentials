@@ -41,7 +41,6 @@ const Navbar: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const context = useContext(ShopContext);
 
-
   if (!context) {
     throw new Error("Navbar must be used within a ShopContextProvider");
   }
@@ -56,12 +55,14 @@ const Navbar: React.FC = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  const closeMenu = () => {
+    setIsMenuOpen(false);
+  };
+
   const cartQuantity = Object.values(cartItems).reduce(
     (acc, quantity) => acc + quantity,
     0
   );
-
-  
 
   return (
     <>
@@ -78,26 +79,28 @@ const Navbar: React.FC = () => {
               </MenuIcon>
               <ul className="navlinks">
                 <li>
-                  <NavLink to="/">Home</NavLink>
+                  <NavLink to="/" onClick={closeMenu}>
+                    Home
+                  </NavLink>
                 </li>
                 <li>
-                  <NavLink to="/shop" id="shop">
+                  <NavLink to="/shop" id="shop" onClick={closeMenu}>
                     Shop
                   </NavLink>
                 </li>
                 <li>
-                  <NavLink to="/about" id="about">
+                  <NavLink to="/about" id="about" onClick={closeMenu}>
                     About
                   </NavLink>
                 </li>
                 <li>
-                  <NavLink to="/contact" id="contact">
+                  <NavLink to="/contact" id="contact" onClick={closeMenu}>
                     Contact
                   </NavLink>
                 </li>
               </ul>
               <div className="icons">
-                <NavLink to="/" id="logo1">
+                <NavLink to="/" id="logo1" onClick={closeMenu}>
                   <div className="icon">
                     <img src={Vector1} alt="Logo" className="iconImgs" />
                   </div>
@@ -110,13 +113,13 @@ const Navbar: React.FC = () => {
                   <img src={Vector2} alt="Search" className="iconImgs" />
                 </div>
                 {/* {isSearchClicked && <Search onSearch={handleSearch} />} */}
-                <NavLink to="/" id="logo3">
+                <NavLink to="/" id="logo3" onClick={closeMenu}>
                   <div className="icon">
                     <img src={Vector3} alt="Logo" className="iconImgs" />
                   </div>
                 </NavLink>
                 <CartIconContainer>
-                  <Link to="/cart" id="logo4">
+                  <Link to="/cart" id="logo4" onClick={closeMenu}>
                     <div className="icon">
                       <img src={Vector4} alt="Cart-icon" className="iconImgs" />
                     </div>
