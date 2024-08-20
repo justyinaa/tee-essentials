@@ -63,18 +63,13 @@ const cartProducts =
               </div>
               <div className="divPercentage">
                 <div className="quantityControl divPercentage">
+                
                   <button
                     className="cartBtn"
-                    onClick={() => removeFromCart(product.id)}
                   >
-                    -
-                  </button>
-                  <span>{cartItems[product.id]}</span>
-                  <button
-                    className="cartBtn"
-                    onClick={() => addToCart(product.id, 1)}
-                  >
-                    +
+                    <span onClick={() => removeFromCart(product.id)}>-</span>
+                    <span>{cartItems[product.id]}</span>
+                    <span onClick={() => addToCart(product.id, 1)}>+</span>
                   </button>
                 </div>
               </div>
