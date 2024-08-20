@@ -11,7 +11,7 @@ interface FilterProps {
   setProductsPerPage: (count: number) => void;
   totalProducts: number;
   productsPerPage: number;
-  filteredProductsCount: number; 
+  filteredProductsCount: number;
 }
 
 const Filter: React.FC<FilterProps> = ({
@@ -50,7 +50,25 @@ const Filter: React.FC<FilterProps> = ({
   return (
     <div className="filter">
       <div className="filterDiv1">
-        <img src={filter1} alt="" className="filterImgs" />
+        <div className="filterImageContainer">
+          <img src={filter1} alt="Filter" className="filterImgs" />
+          <div className="dropdown-menu">
+            <select
+              name="category"
+              id="category"
+              className="select"
+              onChange={(e) => setCategoryFilter(e.target.value)}
+            >
+              <option value="" className="default">
+                Select Category
+              </option>
+              <option value="beauty">Beauty</option>
+              <option value="furniture">Furniture</option>
+              <option value="groceries">Groceries</option>
+              <option value="fragrances">Fragrances</option>
+            </select>
+          </div>
+        </div>
         <p>Filter</p>
         <img src={filter2} alt="" className="filterImgs" />
         <img src={filter3} alt="" className="filterImgs" />
@@ -81,36 +99,17 @@ const Filter: React.FC<FilterProps> = ({
             )}
           </span>
         </p>
-        <p className="sortBy">
-          Sort by{" "}
-          <span>
-            <select
-              name="sort"
-              id="sort"
-              className="select"
-              onChange={(e) => setSortOption(e.target.value)}
-            >
-              <option value="default">Default</option>
-              <option value="price-asc">Lowest to Highest</option>
-              <option value="price-desc">Highest to Lowest</option>
-            </select>
-          </span>
-        </p>
-        <p className="filterBy">Filter by </p>
+        <p className="sortBy">Sort by </p>
         <span>
           <select
-            name="category"
-            id="category"
+            name="sort"
+            id="sort"
             className="select"
-            onChange={(e) => setCategoryFilter(e.target.value)}
+            onChange={(e) => setSortOption(e.target.value)}
           >
-            <option value="" className="default">
-              Default
-            </option>
-            <option value="beauty">Beauty</option>
-            <option value="furniture">Furniture</option>
-            <option value="groceries">Groceries</option>
-            <option value="fragrances">Fragrances</option>
+            <option value="default">Default</option>
+            <option value="price-asc">Lowest to Highest</option>
+            <option value="price-desc">Highest to Lowest</option>
           </select>
         </span>
       </div>
