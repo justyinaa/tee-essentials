@@ -1,92 +1,136 @@
-.filter{
+.filter {
     display: flex;
     justify-content: space-between;
     background-color: #FAF4F4;
     color: #000;
     padding: 2rem 5rem;
 }
-.filterDiv1{
+
+.filterDiv1 {
     width: fit-content;
     display: flex;
     gap: 2rem;
     align-items: center;
 }
-.filterImgs{
+
+.filterImgs {
     width: 20px;
     height: 20px;
 }
-.filterDiv2{
+
+.filterDiv2 {
     display: flex;
     gap: 2rem;
     align-items: center;
 }
-p{
+
+p {
     font-size: 14px;
 }
-.sortParagraph{
+
+.sortParagraph {
     border-left: 2px solid #9F9F9F;
 
 }
-.sortParagraphSpacing{
+
+.sortParagraphSpacing {
     margin-left: 20px;
 }
-.sortCount{
+
+.sortCount {
     background-color: #fff;
     color: #000;
 }
-.select{
+
+.select {
     background-color: white;
     border: none;
     padding: 10px;
     border-radius: 10px;
     color: #000;
 }
-.selectButton{
+
+.selectButton {
     background-color: white;
     font-size: 14px;
+}
+.filterImageContainer {
+    position: relative;
+    display: inline-block;
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+    padding: 8px 0;
+    min-width: 150px;
+    border-radius: 4px;
+
+select {
+    background-color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    color: #000;
+    border: 1px solid #ccc;
+    }
+}
+
+    &:hover .dropdown-menu {
+        display: block;
+    }
 }
 
 @media (max-width: 1024px) {}
 
 @media (max-width: 650px) {
     .sortParagraphSpacing {
-            display: none;
-        }
-    .filterImgs {
-            width: 15px;
-            height: 15px;
-        }
-    .sortBy{
         display: none;
     }
-    .select{
+
+    .filterImgs {
+        width: 15px;
+        height: 15px;
+    }
+
+    .select {
         background-color: white;
         border: none;
         padding: 10px;
         border-radius: 10px;
         color: #000;
     }
-    .filterBy{
+
+    .filterBy {
         display: none;
     }
-    .filterDiv1{
+
+    .filterDiv1 {
         gap: 5rem;
+    }
+    .sortBy{
+        display: none;
     }
 
 }
+
 @media (max-width: 485px) {
-    .sortParagraphSpacing{
+    .sortParagraphSpacing {
         display: none;
     }
-        .select {
-            background-color: #FAF4F4;
-            border: none;
-            padding: 10px;
-            border-radius: 10px;
-            color: #000;
-        }
-        .sortCount{
-            color: #000;
-        }
-       
+
+    .select {
+        background-color: #FAF4F4;
+        border: none;
+        padding: 10px;
+        border-radius: 10px;
+        color: #000;
+    }
+
+    .sortCount {
+        color: #000;
+    }
+
 }
