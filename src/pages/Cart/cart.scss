@@ -18,10 +18,12 @@ $herobg: url('/src/assets/heroimage.png');
     background-color: #FBEBB5;
 }
 .cartBtn {
-    background-color: #f1f1f1;
-    padding: 5px;
-    width: 30px;
+    display: flex;
+    gap: 20px;
+    background-color: white;
+    border: 1px solid black;
     color: #000;
+    padding: 4px;
 }
 
 
@@ -32,6 +34,7 @@ $herobg: url('/src/assets/heroimage.png');
     align-items: center;
     gap: 2rem;
     color: #000;
+    // border: 1px solid red;
     
 }
 .cartHeader {
@@ -179,12 +182,7 @@ width: 10%;
 
     width: 10%;
 }
-.cartTotalsDiv {
-    /* margin-top: 50px; */
-    background-color: #FFF9E5;
-    padding: 30px;
-    margin: 50px;
-}
+
 
 .cartTotalsText {
     font-size: 10rem;
@@ -228,8 +226,8 @@ width: 10%;
 }
 .cartTotalsDiv {
     background-color: #FFF9E5;
-    padding: 18rem;
-    margin: 3rem;
+    padding: 16rem;
+    margin: 5rem;
 }
 .productsDisplay {
     display: grid;
@@ -243,6 +241,7 @@ width: 10%;
 .quantityControl{
     gap: 1.5rem;
     color: #000;
+   
 }
 .checkoutBtn{
     color: #000;
