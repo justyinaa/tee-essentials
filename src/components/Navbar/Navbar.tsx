@@ -102,7 +102,7 @@ const Navbar: React.FC = () => {
               <div className="icons">
                 <NavLink to="/" id="logo1" onClick={closeMenu}>
                   <div className="icon">
-                    <img src={Vector1} alt="Logo" className="iconImgs" />
+                    <img src={Vector1} alt="Logo" />
                   </div>
                 </NavLink>
                 <div
@@ -110,18 +110,18 @@ const Navbar: React.FC = () => {
                   className="icon"
                   onClick={handleSearchIconClick}
                 >
-                  <img src={Vector2} alt="Search" className="iconImgs" />
+                  <img src={Vector2} alt="Search" />
                 </div>
                 {/* {isSearchClicked && <Search onSearch={handleSearch} />} */}
                 <NavLink to="/" id="logo3" onClick={closeMenu}>
                   <div className="icon">
-                    <img src={Vector3} alt="Logo" className="iconImgs" />
+                    <img src={Vector3} alt="Logo" />
                   </div>
                 </NavLink>
                 <CartIconContainer>
                   <Link to="/cart" id="logo4" onClick={closeMenu}>
                     <div className="icon">
-                      <img src={Vector4} alt="Cart-icon" className="iconImgs" />
+                      <img src={Vector4} alt="Cart-icon" />
                     </div>
                   </Link>
                   {cartQuantity > 0 && (
