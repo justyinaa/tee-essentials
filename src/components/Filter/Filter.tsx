@@ -78,40 +78,47 @@ const Filter: React.FC<FilterProps> = ({
           </span>
         </p>
       </div>
+      <div className="line"></div>
       <div className="filterDiv2">
-        <p>
-          Show{" "}
-          <span>
-            {screenSize < 768 ? (
-              <button
-                className="sortCount"
-                onClick={() => setProductsPerPage(8)}
-              >
-                8
-              </button>
-            ) : (
-              <button
-                className="sortCount"
-                onClick={() => setProductsPerPage(16)}
-              >
-                16
-              </button>
-            )}
+        <div className="show">
+          <p>
+            Show{" "}
+            <span>
+              {screenSize < 768 ? (
+                <button
+                  className="sortCount"
+                  onClick={() => setProductsPerPage(8)}
+                >
+                  8
+                </button>
+              ) : (
+                <button
+                  className="sortCount"
+                  onClick={() => setProductsPerPage(16)}
+                >
+                  16
+                </button>
+              )}
+            </span>
+          </p>
+        </div>
+
+        <div className="sort">
+          <p className="sortBy">Sort by </p>
+          <span className="select_container">
+            <select
+              name="sort"
+              id="sort"
+              className="select"
+              onChange={(e) => setSortOption(e.target.value)}
+            >
+              <option value="default">Default</option>
+              <option value="price-asc">Lowest to Highest</option>
+              <option value="price-desc">Highest to Lowest</option>
+            </select>
           </span>
-        </p>
-        <p className="sortBy">Sort by </p>
-        <span>
-          <select
-            name="sort"
-            id="sort"
-            className="select"
-            onChange={(e) => setSortOption(e.target.value)}
-          >
-            <option value="default">Default</option>
-            <option value="price-asc">Lowest to Highest</option>
-            <option value="price-desc">Highest to Lowest</option>
-          </select>
-        </span>
+        </div>
+        <div className="line line2"></div>
       </div>
     </div>
   );
