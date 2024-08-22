@@ -36,7 +36,7 @@ nav ul li {
 .navbar-container{
     z-index: 5;
 }
-.icon{
+.icon {
     width: 2.4rem;
     height: 2.4rem;
     cursor: pointer;
@@ -163,8 +163,6 @@ nav ul li {
         display: block;
         margin-left: -533px;
         margin-top: 50px;
-
-
     }
 
     .menu-open .icons {
@@ -172,14 +170,14 @@ nav ul li {
     }
 
     .menuIcon {
-        
-     font-size: 5.3rem;
-            
+        font-size: 5.3rem;          
     }
-    .iconImgs{
-        width: 6rem;
-        height: 6rem;
+    .icon {
+        width: 5rem;
+        height: 5rem;
+        cursor: pointer;
     }
+
 }
 
 @media (max-width: 600px) {
@@ -192,11 +190,11 @@ nav {
         display: none;
     }
 
-    .icons {
-        display: flex;
-        font-size: 1.1rem;
-        gap: 17.4rem;
-    }
+   .icons {
+       display: flex;
+       font-size: 1.1rem;
+       justify-content: end;
+   }
 
     .navbar-container {
         display: block;
@@ -262,7 +260,7 @@ nav {
         display: flex;
         font-size: 1.1rem;
         justify-content: end;
-        //gap: 17.4rem;
+   
     }
 
     .navbar-container {
@@ -300,11 +298,6 @@ nav {
 }
     .menu-open .icons {
         display: none;
-    }
-
-    .iconImgs{
-        width: 7rem;
-        height: 7rem;
     }
     .beat{
         width: 2px;
