@@ -322,23 +322,24 @@ h4,
     //all products section
 
     .allProducts {
-        margin-top: 50px;
-        display: grid;
-        grid-template-columns: 2fr 2fr;
-        gap: 2rem;
-    }
-
+            margin-top: 50px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            /* gap: 2rem; */
+            justify-items: center;
+        }
     .product-img {
         width: 100%;
         height: 100%;
 
     }
-        .img-container {
-            width: 200px;
-            height: 200px;
-        }
+    .img-container {
+        width: 100%;
+        height: 30%;
+    }
         .productdiv{
             width: 50%;
+            text-align: center;
         }
 
     .productTitle {
