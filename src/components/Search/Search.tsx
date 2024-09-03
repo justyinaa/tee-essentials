@@ -9,7 +9,7 @@ interface SearchProps {
   onSearch: (query: string) => void;
 }
 
-const Search: React.FC<SearchProps> = ({ onSearch }) => {
+const Search: React.FC<SearchProps> = () => {
   const [searchQuery, setSearchQuery] = useState<string>("");
   const { setSearchResults }: any = useContext(ShopContext);
   const navigate = useNavigate();
@@ -47,7 +47,7 @@ const Search: React.FC<SearchProps> = ({ onSearch }) => {
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     handleSearch(searchQuery);
-    onSearch(searchQuery);
+    // onSearch(searchQuery);
     navigate(`/search/${searchQuery}`);
     setSearchQuery("");
   };
