@@ -64,7 +64,7 @@ const Search: React.FC<SearchProps> = ({ onSearch }) => {
         />
       </form>
 
-      <div>
+      <div className="beatloader">
         {loading && <div ><BeatLoader className="beat"/></div>}
         {error && <div>{error}</div>}
       </div>
