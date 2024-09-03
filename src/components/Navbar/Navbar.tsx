@@ -7,6 +7,8 @@ import Vector2 from "../../assets/Vector2.png";
 import Vector3 from "../../assets/Vector3.png";
 import Vector4 from "../../assets/Vector4.png";
 import "./navbar.scss";
+import Search from "../Search/Search";
+
 
 const MenuIcon = styled.div`
   display: none;
@@ -64,6 +66,10 @@ const Navbar: React.FC = () => {
     0
   );
 
+  function handleSearch(_query: string): void {
+    throw new Error("Function not implemented.");
+  }
+
   return (
     <>
       <div id="navigation-bar" className={isMenuOpen ? "menu-open" : ""}>
@@ -112,7 +118,7 @@ const Navbar: React.FC = () => {
                 >
                   <img src={Vector2} alt="Search" />
                 </div>
-                {/* {isSearchClicked && <Search onSearch={handleSearch} />} */}
+                {isSearchClicked && <Search onSearch={handleSearch} />}
                 <NavLink to="/" id="logo3" onClick={closeMenu}>
                   <div className="icon">
                     <img src={Vector3} alt="Logo" />
