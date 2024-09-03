@@ -44,19 +44,27 @@ const SearchResults: React.FC = () => {
   // };
 
   return (
-    <div id="allProducts">
+    <div>
       {searchResults && searchResults.length > 0 ? (
         <>
           {searchResults.map((product: any) => (
-            <Link key={product.id} to={`/products/${product.id}`}>
-              <div className="searchedProduct">
-                <img src={product.thumbnail} alt={product.title} />
+           
+            <div className="productdiv">
+               <Link key={product.id} to={`/products/${product.id}`}>
+                <div className="img-container">
+                  <img
+                    src={product.thumbnail}
+                    alt={product.title}
+                    className="product-img"
+                  />
+                </div>
                 <div id="productLinks">
                   <div className="productTitle">{product.title}</div>
                   <div className="productPrice">Rs. {product.price}</div>
                 </div>
+                </Link>
               </div>
-            </Link>
+            
           ))}
         </>
       ) : (
