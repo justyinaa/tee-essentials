@@ -63,10 +63,14 @@ nav ul li {
     outline: none;
 }
 
-.searchResults {
+.searchedProduct {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
+}
+.searchedImg{
+    width: 25%;
+    height: 25%;
 }
 .navlinks li a,
 .icons li a{
@@ -240,7 +244,7 @@ nav {
             border: none;
             border-bottom: solid 3px black;
             font-size: 3rem;
-            margin-top: 6rem;
+            margin-top: 0;
             /* font-size: 0px; */
         }
 }
@@ -299,10 +303,9 @@ nav {
     .menu-open .icons {
         display: none;
     }
-    .beat{
-        width: 2px;
-        height: 2px;
-    }
+   .beatloader{
+    display: none;
+   }
 
 }
 
