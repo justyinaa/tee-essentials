@@ -9,7 +9,6 @@ import Vector4 from "../../assets/Vector4.png";
 import "./navbar.scss";
 import Search from "../Search/Search";
 
-
 const MenuIcon = styled.div`
   display: none;
   @media (max-width: 768px) {
