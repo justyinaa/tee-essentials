@@ -57,7 +57,7 @@ const Footer: React.FC = () => {
         </div>
 
         <p className="footerParagraph">
-          2022 Meubel House. All rights reserved
+          2024 Justina Ominisan. All rights reserved.
         </p>
       </>
     );
