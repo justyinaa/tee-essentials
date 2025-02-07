@@ -1,7 +1,12 @@
 import React from "react";
 import "./Footer.scss"
+import {Fragment, useState, useEffect} from react;
 
 const Footer: React.FC = () => {
+     const [year, setYear] = useState(new Date().getFullYear());
+     useEffect(() => {
+    setYear(new Date().getFullYear());
+  }, []);
     return (
       <>
         <div className="footerLinks">
@@ -57,7 +62,7 @@ const Footer: React.FC = () => {
         </div>
 
         <p className="footerParagraph">
-          &copy;Justina Ominisan. All rights reserved.
+            {`© ${year}. Justina Ominisan. All Rights Reserved.`}
         </p>
       </>
     );
