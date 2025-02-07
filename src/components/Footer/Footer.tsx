@@ -57,7 +57,7 @@ const Footer: React.FC = () => {
         </div>
 
         <p className="footerParagraph">
-          2025 Justina Ominisan. All rights reserved.
+          &copy;Justina Ominisan. All rights reserved.
         </p>
       </>
     );
